@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-node-20251112075202QJVSSI">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v3.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elementos y Propiedades | Explorando los Cuerpos Geométricos</title>
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><script src="../libs/exe_atools/exe_atools.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../libs/exe_atools/exe_atools.css">
+<script src="../idevices/text/text.js"> </script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css">
+<script src="../theme/default.js"> </script><link rel="stylesheet" href="../theme/content.css">
+</head>
+<body class="exe-export exe-web-site" lang="es">
+<script>document.body.className+=" js"</script><div class="exe-content exe-export pre-js siteNav-hidden"> <nav id="siteNav"> <ul> <li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Explorando los Cuerpos Geométricos</a><ul> <li> <a href="../html/objetivo-de-aprendizaje.html" class="no-ch">Objetivo de Aprendizaje</a>
+</li>
+<li> <a href="../html/que-son-los-cuerpos-geometricos.html" class="no-ch">¿Qué son los Cuerpos Geométricos?</a>
+</li>
+<li> <a href="../html/clasificacion-de-cuerpos-geometricos.html" class="no-ch">Clasificación de Cuerpos Geométricos</a>
+</li>
+<li class="active"> <a href="../html/elementos-y-propiedades.html" class="active no-ch">Elementos y Propiedades</a>
+</li>
+<li> <a href="../html/creditos.html" class="daddy">Créditos</a><ul class="other-section"> <li> <a href="../html/descargar-fichero.html" class="no-ch">Descargar Fichero </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></nav><main id="20251112075202QJVSSI" class="page"> <header id="header-20251112075202QJVSSI" class="page-header"> <h1 class="package-title">Explorando los Cuerpos Geométricos</h1>
+<h2 class="page-title">Elementos y Propiedades</h2></header><div id="page-content-20251112075202QJVSSI" class="page-content"> <article id="20251112075202PNOAZU" class="box"> <header class="box-head no-icon"> <h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Ocultar/Mostrar contenido"> <span>Ocultar/Mostrar contenido</span></button></header><div class="box-content"> <div id="20251112011849231ZK9" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json"><div class="exe-text-template"><div class="textIdeviceContent">
+            <div class="exe-text-activity">
+                <div><p><br></p>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .contenido-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .titulo-principal {
+            text-align: center;
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitulo {
+            text-align: center;
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+        }
+        
+        .introduccion {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 6px solid #ff6b6b;
+        }
+        
+        .introduccion p {
+            color: #2c3e50;
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        
+        .seccion-titulo {
+            font-size: 2em;
+            color: #34495e;
+            margin: 50px 0 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .elemento-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid;
+            transition: transform 0.3s ease;
+        }
+        
+        .elemento-card:hover {
+            transform: translateX(8px);
+        }
+        
+        .elemento-card.caras {
+            border-left-color: #3498db;
+        }
+        
+        .elemento-card.vertices {
+            border-left-color: #e74c3c;
+        }
+        
+        .elemento-card.aristas {
+            border-left-color: #2ecc71;
+        }
+        
+        .elemento-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .elemento-icono {
+            font-size: 3em;
+        }
+        
+        .elemento-info h3 {
+            font-size: 1.6em;
+            color: #2c3e50;
+        }
+        
+        .elemento-definicion {
+            color: #555;
+            font-size: 1.05em;
+            line-height: 1.8;
+            margin: 15px 0;
+            text-align: justify;
+        }
+        
+        .ejemplo-simple {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            color: #34495e;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        .tabla-resumen {
+            margin: 40px 0;
+            overflow-x: auto;
+        }
+        
+        .tabla-resumen h3 {
+            text-align: center;
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        thead {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        th {
+            padding: 15px;
+            text-align: center;
+            font-size: 1em;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ecf0f1;
+            color: #2c3e50;
+        }
+        
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+        
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .cuerpo-nombre-col {
+            font-weight: bold;
+            text-align: left;
+            color: #667eea;
+        }
+
+        .actividades-intro {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 60px 0 40px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .actividades-titulo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .icono-actividades {
+            font-size: 3em;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .actividades-intro h2 {
+            color: white;
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .actividades-descripcion {
+            color: white;
+            font-size: 1.2em;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .actividades-descripcion strong {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+
+        .actividades-container {
+            margin: 40px 0;
+        }
+
+        .actividad-box {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            border: 3px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .actividad-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.25);
+        }
+
+        .actividad-header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .actividad-header h3 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .actividad-header p {
+            color: #666;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+
+        .evaluacion-section {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 50px;
+            border-radius: 20px;
+            margin: 60px 0 40px;
+            box-shadow: 0 10px 40px rgba(255, 152, 0, 0.2);
+        }
+
+        .evaluacion-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .icono-evaluacion {
+            font-size: 3em;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .evaluacion-header h2 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+        }
+
+        .evaluacion-descripcion {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 1.2em;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-weight: 500;
+        }
+
+        .pregunta-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 5px solid #667eea;
+        }
+
+        .pregunta-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .pregunta-card.correcta {
+            border-left-color: #28a745;
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+        }
+
+        .pregunta-card.incorrecta {
+            border-left-color: #dc3545;
+            background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+        }
+
+        .pregunta-numero {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-right: 15px;
+            box-shadow: 0 3px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        .pregunta-contenido {
+            display: inline-block;
+            width: calc(100% - 60px);
+            vertical-align: top;
+        }
+
+        .pregunta-texto {
+            color: #2c3e50;
+            font-size: 1.15em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .opciones {
+            margin-top: 15px;
+        }
+
+        .opcion {
+            display: block;
+            background: #f8f9fa;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .opcion:hover {
+            background: #e3f2fd;
+            border-color: #667eea;
+            transform: translateX(5px);
+        }
+
+        .opcion input[type="radio"] {
+            margin-right: 12px;
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+        }
+
+        .opcion span {
+            font-size: 1.05em;
+            color: #2c3e50;
+            vertical-align: middle;
+        }
+
+        .btn-calificar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 1.3em;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 40px auto;
+            display: block;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-calificar:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+
+        .resultado-final {
+            display: none;
+            margin-top: 40px;
+        }
+
+        .resultado-final.show {
+            display: block;
+            animation: slideDown 0.6s ease;
+        }
+
+        .resultado-contenido {
+            background: linear-gradient(135deg, #fff, #f8f9fa);
+            border: 4px solid #28a745;
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 15px 50px rgba(40, 167, 69, 0.3);
+        }
+
+        .resultado-contenido h3 {
+            color: #28a745;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nota-display {
+            margin: 30px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nota-label {
+            display: block;
+            color: #666;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .nota-valor {
+            font-size: 5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nota-total {
+            font-size: 2em;
+            color: #666;
+        }
+
+        .mensaje-motivacional {
+            background: linear-gradient(135deg, #fff3cd 0%, #fff9e6 100%);
+            border: 2px solid #ffc107;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            color: #2c3e50;
+            font-size: 1.3em;
+            line-height: 1.8;
+            font-style: italic;
+            font-weight: 500;
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.2);
+        }
+
+        .btn-reintentar {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold;
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-reintentar:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 107, 107, 0.6);
+        }
+        
+        @media (max-width: 768px) {
+            .contenido-container {
+                padding: 30px 20px;
+            }
+            
+            .titulo-principal {
+                font-size: 2em;
+            }
+            
+            table {
+                font-size: 0.9em;
+            }
+            
+            th, td {
+                padding: 10px 5px;
+            }
+        }
+    </style>
+<div class="contenido-container">
+<h1 class="titulo-principal">🔍 Elementos y Propiedades</h1>
+<p class="subtitulo">Conociendo las partes de los cuerpos geométricos</p>
+<div class="introduccion">
+<p>Cada cuerpo geométrico está formado por diferentes elementos que lo hacen único. Conocer estos elementos nos permite describirlos con precisión y entender mejor sus propiedades. Los tres elementos principales son: caras, vértices y aristas.</p>
+</div>
+<h2 class="seccion-titulo">📚 Conceptos Fundamentales</h2>
+<div class="elemento-card caras">
+<div class="elemento-header">
+<div class="elemento-icono">📄</div>
+<div class="elemento-info">
+<h3>CARAS</h3>
+</div>
+</div>
+<p class="elemento-definicion">Las <strong>caras</strong> son las superficies planas que forman el cuerpo geométrico. En los poliedros, todas las caras son polígonos (cuadrados, rectángulos, triángulos). En los cuerpos redondos, pueden ser curvas o circulares.</p>
+<div class="ejemplo-simple">💡 Ejemplo: Un cubo tiene 6 caras cuadradas. Una lata (cilindro) tiene 3 caras: 2 circulares y 1 curva.</div>
+</div>
+<div class="elemento-card vertices">
+<div class="elemento-header">
+<div class="elemento-icono">📍</div>
+<div class="elemento-info">
+<h3>VÉRTICES</h3>
+</div>
+</div>
+<p class="elemento-definicion">Los <strong>vértices</strong> son los puntos donde se encuentran tres o más aristas. Son las "esquinas" del cuerpo geométrico. No todos los cuerpos tienen vértices (por ejemplo, la esfera no tiene ninguno).</p>
+<div class="ejemplo-simple">💡 Ejemplo: Un cubo tiene 8 vértices (8 esquinas). Un cono tiene 1 vértice en su punta.</div>
+</div>
+<div class="elemento-card aristas">
+<div class="elemento-header">
+<div class="elemento-icono">📏</div>
+<div class="elemento-info">
+<h3>ARISTAS</h3>
+</div>
+</div>
+<p class="elemento-definicion">Las <strong>aristas</strong> son las líneas donde se unen dos caras. Son los "bordes" del cuerpo geométrico. En los poliedros son segmentos rectos, mientras que en algunos cuerpos redondos pueden ser curvas.</p>
+<div class="ejemplo-simple">💡 Ejemplo: Un cubo tiene 12 aristas. Un cilindro tiene 2 aristas circulares en sus bases.</div>
+</div>
+<div class="tabla-resumen">
+<h3>📊 Tabla Resumen de Elementos</h3>
+<table>
+<thead>
+<tr>
+<th>Cuerpo Geométrico</th>
+<th>Caras</th>
+<th>Vértices</th>
+<th>Aristas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="cuerpo-nombre-col">🧊 Cubo</td>
+<td>6</td>
+<td>8</td>
+<td>12</td>
+</tr>
+<tr>
+<td class="cuerpo-nombre-col">📦 Prisma Rectangular</td>
+<td>6</td>
+<td>8</td>
+<td>12</td>
+</tr>
+<tr>
+<td class="cuerpo-nombre-col">🔺 Pirámide Base Cuadrada</td>
+<td>5</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="cuerpo-nombre-col">⚪ Esfera</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td class="cuerpo-nombre-col">🥫 Cilindro</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="cuerpo-nombre-col">🍦 Cono</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="actividades-intro">
+<div class="actividades-titulo"><span class="icono-actividades">🎯</span>
+<h2>¡Hora de Practicar!</h2>
+</div>
+<p class="actividades-descripcion">Ahora que conoces los elementos de los cuerpos geométricos, es momento de poner en práctica lo aprendido. Completa las siguientes actividades interactivas. <strong>Cada una viene con su retroalimentación personalizada</strong> para ayudarte a entender mejor los conceptos. ¡No te preocupes si te equivocas, aprender es un proceso! 🌟</p>
+</div>
+<div class="actividades-container">
+<div class="actividad-box">
+<div class="actividad-header">
+<h3>🎲 Actividad 1: Agrupa los Cuerpos Geométricos</h3>
+<p>Clasifica correctamente cada figura según sus características</p>
+</div>
+<iframe width="1920" height="1440" style="border: none; border-radius: 10px;" src="../content/resources/20251112011849231ZK9/agrupar.html"></iframe><br></div>
+<div class="actividad-box">
+<div class="actividad-header">
+<h3>✍️ Actividad 2: Completa los Elementos</h3>
+<p>Identifica y cuenta caras, vértices y aristas de cada cuerpo</p>
+</div>
+<iframe width="100%" height="600" style="border: none; border-radius: 10px;" src="../content/resources/20251112011849231ZK9/completa.html"></iframe></div>
+</div>
+<div class="evaluacion-section">
+<div class="evaluacion-header"><span class="icono-evaluacion">📝</span>
+<h2>Evaluación Final</h2>
+</div>
+<p class="evaluacion-descripcion">¡Excelente trabajo hasta aquí! Ahora es momento de demostrar todo lo que has aprendido. Responde estas 10 preguntas con calma y confianza. ¡Tú puedes! 💪</p>
+<!-- Pregunta 1 -->
+<div class="pregunta-card">
+<div class="pregunta-numero">1</div>
+<div class="pregunta-contenido">
+<p class="pregunta-texto">¿Cuántas caras tiene un cubo?</p>
+<div class="opciones"><label class="opcion"> <input type="radio" name="p1" value="a"> <span>4 caras</span> </label> <label class="opcion"> <input type="radio" name="p1" value="b"> <span>6 caras</span> </label> <label class="opcion"> <input type="radio" name="p1" value="c"> <span>8 caras</span> </label></div>
+</div>
+</div>
+<!-- Pregunta 2 -->
+<div class="pregunta-card">
+<div class="pregunta-numero">2</div>
+<div class="pregunta-contenido">
+<p class="pregunta-texto">Los vértices son los puntos donde se encuentran tres o más aristas.</p>
+<div class="opciones"><label class="opcion"> <input type="radio" name="p2" value="v"> <span>✓ Verdadero</span> </label> <label class="opcion"> <input type="radio" name="p2" value="f"> <span>✗ Falso</span> </label></div>
+</div>
+</div>
+<!-- Pregunta 3 -->
+<div class="pregunta-card">
+<div class="pregunta-numero">3</div>
+<div class="pregunta-contenido">
+<p class="pregunta-texto">¿Cuál de estos cuerpos geométricos NO tiene vértices?</p>
+<div class="opciones"><label class="opcion"> <input type="radio" name="p3" value="a"> <span>🧊 Cubo</span> </label> <label class="opcion"> <input type="radio" name="p3" value="b"> <span>⚪ Esfera</span> </label> <label class="opcion"> <input type="radio" name="p3" value="c"> <span>🔺 Pirámide</span> </label></div>
+</div>
+</div>
+<!-- Pregunta 4 -->
+<div class="pregunta-card">
+<div class="pregunta-numero">4</div>
+<div class="pregunta-contenido">
+<p class="pregunta-texto">Las aristas son las superficies planas que forman el cuerpo geométrico.</p>
+<div class="opciones"><label class="opcion"> <input type="radio" name="p4" value="v"> <span>✓ Verdadero</span> </label> <label class="opcion"> <input type="radio" name="p4" value="f"> <span>✗ Falso</span> </label></div>
+</div>
+</div>
+<!-- Pregunta 5 -->
+<div class="pregunta-card">
+<div class="pregunta-numero">5</div>
+<div class="pregunta-contenido">
+<p class="pregunta-texto">¿Cuántos vértices tiene una pirámide de base cuadrada?</p>
+<div class="opciones"><label class="opcion"> <input type="radio" name="p5" value="a"> <span>4 vértices</span> </label> <label class="opcion"> <input type="radio" name="p5" value="b"> <span>5 vértices</span> </label> <label class="opcion"> <input type="radio" name="p5" value="c"> <span>8 vértices</span> </label></div>
+</div>
+</div>
+<!-- Pregunta 6 -->
+<div class="pregunta-card">
+<div class="pregunta-numero">6</div>
+<div class="pregunta-contenido">
+<p class="pregunta-texto">Un cilindro tiene 3 caras: 2 circulares y 1 curva.</p>
+<div class="opciones"><label class="opcion"> <input type="radio" name="p6" value="v"> <span>✓ Verdadero</span> </label> <label class="opcion"> <input type="radio" name="p6" value="f"> <span>✗ Falso</span> </label></div>
+</div>
+</div>
+<!-- Pregunta 7 -->
+<div class="pregunta-card">
+<div class="pregunta-numero">7</div>
+<div class="pregunta-contenido">
+<p class="pregunta-texto">¿Cuántas aristas tiene un cubo?</p>
+<div class="opciones"><label class="opcion"> <input type="radio" name="p7" value="a"> <span>8 aristas</span> </label> <label class="opcion"> <input type="radio" name="p7" value="b"> <span>12 aristas</span> </label> <label class="opcion"> <input type="radio" name="p7" value="c"> <span>6 aristas</span> </label></div>
+</div>
+</div>
+<!-- Pregunta 8 -->
+<div class="pregunta-card">
+<div class="pregunta-numero">8</div>
+<div class="pregunta-contenido">
+<p class="pregunta-texto">Un cono tiene 1 vértice en su punta.</p>
+<div class="opciones"><label class="opcion"> <input type="radio" name="p8" value="v"> <span>✓ Verdadero</span> </label> <label class="opcion"> <input type="radio" name="p8" value="f"> <span>✗ Falso</span> </label></div>
+</div>
+</div>
+<!-- Pregunta 9 -->
+<div class="pregunta-card">
+<div class="pregunta-numero">9</div>
+<div class="pregunta-contenido">
+<p class="pregunta-texto">¿Qué elementos tiene una esfera?</p>
+<div class="opciones"><label class="opcion"> <input type="radio" name="p9" value="a"> <span>1 cara curva</span> </label> <label class="opcion"> <input type="radio" name="p9" value="b"> <span>No tiene caras, vértices ni aristas</span> </label> <label class="opcion"> <input type="radio" name="p9" value="c"> <span>Infinitos vértices</span> </label></div>
+</div>
+</div>
+<!-- Pregunta 10 -->
+<div class="pregunta-card">
+<div class="pregunta-numero">10</div>
+<div class="pregunta-contenido">
+<p class="pregunta-texto">Las caras de un poliedro siempre son polígonos (figuras planas).</p>
+<div class="opciones"><label class="opcion"> <input type="radio" name="p10" value="v"> <span>✓ Verdadero</span> </label> <label class="opcion"> <input type="radio" name="p10" value="f"> <span>✗ Falso</span> </label></div>
+</div>
+</div>
+<button class="btn-calificar" onclick="calificarEvaluacion()"> ✨ Calificar Evaluación ✨ </button>
+<div class="resultado-final" id="resultadoFinal">
+<div class="resultado-contenido">
+<h3>🎉 ¡Evaluación Completada! 🎉</h3>
+<div class="nota-display"><span class="nota-label">Tu calificación:</span> <span class="nota-valor" id="notaValor">0</span> <span class="nota-total">/ 10</span></div>
+<div class="mensaje-motivacional" id="mensajeMotivacional"></div>
+<button class="btn-reintentar" onclick="reiniciarEvaluacion()"> 🔄 Intentar de Nuevo </button></div>
+</div>
+</div>
+</div>
+<p>
+<script>
+        // Respuestas correctas
+        const respuestasCorrectas = {
+            p1: 'b',  // 6 caras
+            p2: 'v',  // Verdadero
+            p3: 'b',  // Esfera
+            p4: 'f',  // Falso (eso son las caras, no las aristas)
+            p5: 'b',  // 5 vértices
+            p6: 'v',  // Verdadero
+            p7: 'b',  // 12 aristas
+            p8: 'v',  // Verdadero
+            p9: 'b',  // No tiene caras, vértices ni aristas
+            p10: 'v'  // Verdadero
+        };
+
+        function calificarEvaluacion() {
+            let correctas = 0;
+            let totalPreguntas = 10;
+            
+            // Verificar cada respuesta
+            for (let i = 1; i <= totalPreguntas; i++) {
+                const pregunta = `p${i}`;
+                const respuestaSeleccionada = document.querySelector(`input[name="${pregunta}"]:checked`);
+                const tarjetaPregunta = document.querySelectorAll('.pregunta-card')[i-1];
+                
+                if (respuestaSeleccionada) {
+                    if (respuestaSeleccionada.value === respuestasCorrectas[pregunta]) {
+                        correctas++;
+                        tarjetaPregunta.classList.add('correcta');
+                        tarjetaPregunta.classList.remove('incorrecta');
+                    } else {
+                        tarjetaPregunta.classList.add('incorrecta');
+                        tarjetaPregunta.classList.remove('correcta');
+                    }
+                }
+            }
+
+            // Mostrar resultado
+            const nota = correctas;
+            document.getElementById('notaValor').textContent = nota;
+            
+            // Mensaje motivacional según la nota
+            let mensaje = '';
+            if (nota === 10) {
+                mensaje = '¡PERFECTO! 🌟 Eres un maestro de los cuerpos geométricos. Tu esfuerzo y dedicación son admirables. ¡Sigue brillando así!';
+            } else if (nota >= 8) {
+                mensaje = '¡EXCELENTE! 🎯 Dominas muy bien el tema. Has demostrado gran comprensión de los conceptos. ¡Estás en el camino correcto!';
+            } else if (nota >= 6) {
+                mensaje = '¡MUY BIEN! 👏 Vas por buen camino. Has aprendido mucho y con un poco más de práctica serás experto. ¡No te rindas!';
+            } else if (nota >= 4) {
+                mensaje = '¡BUEN INTENTO! 💪 Estás aprendiendo paso a paso. Revisa los conceptos y vuelve a intentarlo. Cada error es una oportunidad para crecer. ¡Tú puedes!';
+            } else {
+                mensaje = '¡SIGUE ADELANTE! 🌱 El aprendizaje es un proceso y cada intento te acerca más al éxito. Repasa los conceptos con calma y vuelve a intentarlo. ¡Confío en ti!';
+            }
+            
+            document.getElementById('mensajeMotivacional').textContent = mensaje;
+            document.getElementById('resultadoFinal').classList.add('show');
+            
+            // Scroll suave al resultado
+            document.getElementById('resultadoFinal').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function reiniciarEvaluacion() {
+            // Limpiar todas las selecciones
+            const radios = document.querySelectorAll('input[type="radio"]');
+            radios.forEach(radio => radio.checked = false);
+            
+            // Quitar clases de correcto/incorrecto
+            const tarjetas = document.querySelectorAll('.pregunta-card');
+            tarjetas.forEach(tarjeta => {
+                tarjeta.classList.remove('correcta', 'incorrecta');
+            });
+            
+            // Ocultar resultado
+            document.getElementById('resultadoFinal').classList.remove('show');
+            
+            // Scroll al inicio de la evaluación
+            document.querySelector('.evaluacion-section').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</p><p class="clearfix"></p></div>
+            </div></div></div></div>
+</div></article>
+</div></main><div class="nav-buttons"> <a href="../html/clasificacion-de-cuerpos-geometricos.html" title="Anterior" class="nav-button nav-button-left"> <span>Anterior</span></a><a href="../html/creditos.html" title="Siguiente" class="nav-button nav-button-right"> <span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense"> <p> <span class="license-label">Licencia: </span><span class="license">free software license GPL</span></p>
+</div>
+</div></footer>
+</div>
+</body>
+</html>
